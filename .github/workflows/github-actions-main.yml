@@ -4,13 +4,13 @@ on:
     branches: [main]
 jobs:
   build:
-    runs-on: localhost
+    runs-on: self-hosted
     steps:
       - uses: actions/checkout@v2
       - name: Build the stack
         run: docker compose up -d --build
   test:
-    runs-on: localhost
+    runs-on: self-hosted
     needs: build
     steps:
       - uses: actions/checkout@v2
