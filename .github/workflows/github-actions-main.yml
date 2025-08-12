@@ -4,13 +4,13 @@ on:
     branches: [main]
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: localhost
     steps:
       - uses: actions/checkout@v2
       - name: Build the stack
         run: docker compose up -d --build
   test:
-    runs-on: ubuntu-latest
+    runs-on: localhost
     needs: build
     steps:
       - uses: actions/checkout@v2
