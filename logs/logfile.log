@@ -1,0 +1,8 @@
+[2025-08-12 16:40:13,606.606] INFO [20332] - Started server process [2444]
+[2025-08-12 16:40:13,606.606] INFO [20332] - Waiting for application startup.
+[2025-08-12 16:40:13,607.607] INFO [20332] - Application startup complete.
+[2025-08-12 16:40:13,607.607] INFO [20332] - Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+[2025-08-12 16:40:40,395.395] INFO [20332] - Shutting down
+[2025-08-12 16:40:40,506.506] INFO [20332] - Waiting for application shutdown.
+[2025-08-12 16:40:40,506.506] INFO [20332] - Application shutdown complete.
+[2025-08-12 16:40:40,507.507] INFO [20332] - Finished server process [2444]
