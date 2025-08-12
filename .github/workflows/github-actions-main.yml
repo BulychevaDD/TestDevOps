@@ -8,6 +8,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build the stack
-        run: docker-compose up -d --build
+        run: docker compose up -d --build
       - name: Smoke test
         run: source ./smoke.sh
