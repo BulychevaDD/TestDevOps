@@ -10,4 +10,4 @@ jobs:
       - name: Build the stack
         run: docker compose up -d --build
       - name: Smoke test
-        run: source ./smoke.sh
+        run: chmod +x ./smoke.sh && ./smoke.sh
