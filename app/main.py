@@ -5,6 +5,7 @@ import pathlib
 
 import model
 from db import engine, get_db
+import schema
 
 
 model.Base.metadata.create_all(bind=engine)
@@ -19,8 +20,8 @@ def get_posts(db: Session = Depends(get_db)):
     return posts
 
 @app.post('/posts')
-def create_post(post_payload, db: Session = Depends(get_db)):
-    new_post = model.Post(**dict(post_payload))
+def create_post(post_payload: schema.PostModel, db: Session = Depends(get_db)):
+    new_post = model.Post(**post_payload.dict())
 
     db.add(new_post)
     db.commit()
